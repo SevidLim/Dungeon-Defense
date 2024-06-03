@@ -11,10 +11,6 @@ public class EnemyController : MonoBehaviour
     [Header("Connect levelManager")]
     private LevelManager levelManager;
 
-    /*[Header("LayerMask")]
-    public LayerMask[] towerLayer;
-    public LayerMask towerLayer2;*/
-
     [Header("Health")]
     public Slider healthBarPrefab;
     Slider healthBar;
@@ -90,7 +86,6 @@ public class EnemyController : MonoBehaviour
             {
                 float range = 15f;
                 
-                //Collider[] hitColliders = Physics.OverlapSphere(transform.position, range, towerLayer);
                 Collider[] hitColliders = Physics.OverlapSphere(transform.position, range);
 
                 foreach (var hitCollider in hitColliders)

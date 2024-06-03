@@ -17,7 +17,6 @@ public class UIInterface : MonoBehaviour
     public bool holdingTrap = false;
 
     public Money money;
-    //public GameObject _placing;
     public TowerPlace towerPlace;
 
     public GameObject _range;
